@@ -105,22 +105,27 @@
   - measure: total_item_cancel_amt
     type: sum
     sql: ${TABLE}.ITEM_CANCEL_AMT
+    value_format: '$#,##0.00'
 
   - measure: total_item_discount_amt
     type: sum
     sql: ${TABLE}.ITEM_DISCOUNT_AMT
+    value_format: '$#,##0.00'
 
   - measure: total_item_line_amt
     type: sum
     sql: ${TABLE}.ITEM_LINE_AMT
+    value_format: '$#,##0.00'
     
   - measure: total_item_qty
     type: sum
     sql: ${TABLE}.ITEM_QTY
+    value_format: '$#,##0.00'
 
   - measure: total_item_return_amt
     type: sum
     sql: ${TABLE}.ITEM_RETURN_AMT
+    value_format: '$#,##0.00'
     
   - measure: total_item_ship_handling_amt
     type: sum
@@ -129,4 +134,5 @@
   - measure: total_item_tax_amt
     type: sum
     sql: ${TABLE}.ITEM_TAX_AMT
+    value_format: '$#,##0.00'
 

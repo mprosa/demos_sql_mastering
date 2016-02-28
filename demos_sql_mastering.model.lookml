@@ -39,26 +39,29 @@
 # 
 - explore: d_individual_profile
   label: 'People Profiles'
+  view_label: 'People Profiles'
   joins:
     - join: d_postal_code
       type: left_outer
       relationship: many_to_one
       sql_on: ${d_individual_profile.postal_cd}=${d_postal_code.postal_cd}
-      view_label: 'D Individual Profile'
+      view_label: 'People Profiles'
 
 - explore: f_order_item
   label: 'Orders'
+  view_label: 'Orders'
   joins:
     - join: f_order
       type: inner
       relationship: many_to_one
       sql_on: ${f_order_item.order_id}=${f_order.order_id}
+      view_label: 'Orders'
     
     - join: d_product
       type: inner
       relationship: many_to_one
       sql_on: ${f_order_item.product_id}=${d_product.product_id}
-
+      view_label: 'Products'
 - explore: d_membership
   label: 'Memberships'
   

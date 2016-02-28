@@ -101,23 +101,31 @@
   - measure: total_order_gross_amt
     type: sum
     sql: ${TABLE}.ORDER_GROSS_AMT
+    value_format: '$#,##0.00'
     
   - measure: total_order_item_qty
     type: sum
     sql: ${TABLE}.ORDER_ITEM_QTY
+    value_format: '$#,##0.00'
     
   - measure: total_order_discount_amt
     type: sum
     sql: ${TABLE}.ORDER_DISCOUNT_AMT
+    value_format: '$#,##0.00'
     
   - measure: total_order_net_amt
     type: sum
     sql: ${TABLE}.ORDER_NET_AMT
+    value_format: '$#,##0.00'
 
   - measure: total_order_ship_handling_amt
     type: sum
     sql: ${TABLE}.ORDER_SHIP_HANDLING_AMT
+    value_format: '$#,##0.00'
     
   - measure: total_order_tax_amt
     type: sum
     sql: ${TABLE}.ORDER_TAX_AMT
+    value_format: '$#,##0.00'
+    
+    
