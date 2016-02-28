@@ -45,7 +45,26 @@
       relationship: many_to_one
       sql_on: ${d_individual_profile.postal_cd}=${d_postal_code.postal_cd}
       view_label: 'D Individual Profile'
-# 
+
+- explore: f_order_item
+  label: 'Orders'
+  joins:
+    - join: f_order
+      type: inner
+      relationship: many_to_one
+      sql_on: ${f_order_item.order_id}=${f_order.order_id}
+    
+    - join: d_product
+      type: inner
+      relationship: many_to_one
+      sql_on: ${f_order_item.product_id}=${d_product.product_id}
+
+- explore: d_membership
+  label: 'Memberships'
+  
+- explore: f_subscription
+  label: 'Subscriptions'
+
 # - explore: d_individual_profile_old
 # 
 # - explore: d_individual_profile_sync_i
@@ -62,7 +81,7 @@
 # 
 # - explore: d_location_type
 # 
-# - explore: d_membership
+
 # 
 # - explore: d_message
 # 
@@ -184,7 +203,6 @@
 #       relationship: many_to_one
 # 
 # 
-# - explore: f_subscription
 # 
 # - explore: logical_attribute_type
 # 

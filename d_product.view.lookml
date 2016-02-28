@@ -18,9 +18,9 @@
     type: string
     sql: ${TABLE}.PRODUCT_DESC
 
-#   - dimension: product_id
-#     type: number
-#     sql: ${TABLE}.PRODUCT_ID
+  - dimension: product_id
+    type: number
+    sql: ${TABLE}.PRODUCT_ID
 
   - dimension: product_nm
     type: string

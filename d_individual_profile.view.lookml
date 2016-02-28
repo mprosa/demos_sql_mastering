@@ -226,6 +226,46 @@
   - dimension: title
     type: string
     sql: ${TABLE}.TITLE
+    
+  - dimension: attrib1
+    type: string
+    sql: ${TABLE}.attrib1
+
+  - dimension: attrib2
+    type: string
+    sql: ${TABLE}.attrib2
+
+  - dimension: attrib3
+    type: string
+    sql: ${TABLE}.attrib3
+
+  - dimension: attrib4
+    type: string
+    sql: ${TABLE}.attrib4
+
+  - dimension: attrib5
+    type: string
+    sql: ${TABLE}.attrib5
+
+  - dimension: attrib6
+    type: string
+    sql: ${TABLE}.attrib6
+
+  - dimension: attrib7
+    type: string
+    sql: ${TABLE}.attrib7
+
+  - dimension: attrib8
+    type: string
+    sql: ${TABLE}.attrib8
+
+  - dimension: attrib9
+    type: string
+    sql: ${TABLE}.attrib9
+
+  - dimension: attrib10
+    type: string
+    sql: ${TABLE}.attrib10
 
   - measure: count
     type: count
