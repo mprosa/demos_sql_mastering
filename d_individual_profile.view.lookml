@@ -229,13 +229,13 @@
     
   - dimension: attrib1
     label: 'Num Recent Support Page Views'
-    type: string
-    sql: ${TABLE}.attrib1
+    type: number
+    sql: cast(${TABLE}.attrib1 as number)
 
   - dimension: attrib2
     label: 'Num Recent Appliance Errors'
-    type: string
-    sql: ${TABLE}.attrib2
+    type: number
+    sql: cast(${TABLE}.attrib2 as number)
 
   - dimension: attrib3
     type: string
@@ -272,4 +272,6 @@
   - measure: count
     type: count
     drill_fields: [first_name, middle_name, last_name, full_name]
+
+
 
