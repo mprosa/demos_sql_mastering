@@ -42,9 +42,9 @@
     type: string
     sql: ${TABLE}.MEMBERSHIP_GROUP
 
-  - dimension: membership_id
-    type: number
-    sql: ${TABLE}.MEMBERSHIP_ID
+#   - dimension: membership_id
+#     type: number
+#     sql: ${TABLE}.MEMBERSHIP_ID
 
   - dimension: membership_status
     type: string

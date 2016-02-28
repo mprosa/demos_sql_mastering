@@ -36,30 +36,30 @@
     type: string
     sql: ${TABLE}.RECIPIENT_ACCOUNT_NUMBER
 
-  - dimension: subscription_cancel_qty
-    type: number
-    sql: ${TABLE}.SUBSCRIPTION_CANCEL_QTY
+#   - dimension: subscription_cancel_qty
+#     type: number
+#     sql: ${TABLE}.SUBSCRIPTION_CANCEL_QTY
 
   - dimension_group: subscription_end_dt
     type: time
     timeframes: [time, date, week, month]
     sql: ${TABLE}.SUBSCRIPTION_END_DT
 
-  - dimension: subscription_fulfilled_qty
-    type: number
-    sql: ${TABLE}.SUBSCRIPTION_FULFILLED_QTY
+#   - dimension: subscription_fulfilled_qty
+#     type: number
+#     sql: ${TABLE}.SUBSCRIPTION_FULFILLED_QTY
 
   - dimension: subscription_id
     type: number
     sql: ${TABLE}.SUBSCRIPTION_ID
 
-  - dimension: subscription_qty
-    type: number
-    sql: ${TABLE}.SUBSCRIPTION_QTY
-
-  - dimension: subscription_remaining_qty
-    type: number
-    sql: ${TABLE}.SUBSCRIPTION_REMAINING_QTY
+#   - dimension: subscription_qty
+#     type: number
+#     sql: ${TABLE}.SUBSCRIPTION_QTY
+# 
+#   - dimension: subscription_remaining_qty
+#     type: number
+#     sql: ${TABLE}.SUBSCRIPTION_REMAINING_QTY
 
   - dimension_group: subscription_start_dt
     type: time
@@ -73,4 +73,20 @@
   - measure: count
     type: count
     drill_fields: []
+    
+  - measure: total_subscription_cancel_qty
+    type: sum
+    sql: ${TABLE}.SUBSCRIPTION_CANCEL_QTY
+    
+  - measure: total_subscription_fulfilled_qty
+    type: sum
+    sql: ${TABLE}.SUBSCRIPTION_FULFILLED_QTY
+    
+  - measure: total_subscription_qty
+    type: sum
+    sql: ${TABLE}.SUBSCRIPTION_QTY
+
+  - measure: total_subscription_remaining_qty
+    type: sum
+    sql: ${TABLE}.SUBSCRIPTION_REMAINING_QTY
 
