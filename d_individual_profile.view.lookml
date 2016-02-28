@@ -230,12 +230,12 @@
   - dimension: attrib1
     label: 'Num Recent Support Page Views'
     type: number
-    sql: cast(${TABLE}.attrib1 as number)
+    sql: cast(${TABLE}.attrib1 as bigint)
 
   - dimension: attrib2
     label: 'Num Recent Appliance Errors'
     type: number
-    sql: cast(${TABLE}.attrib2 as number)
+    sql: cast(${TABLE}.attrib2 as bigint)
 
   - dimension: attrib3
     type: string
