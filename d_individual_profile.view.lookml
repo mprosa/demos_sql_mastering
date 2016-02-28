@@ -228,10 +228,12 @@
     sql: ${TABLE}.TITLE
     
   - dimension: attrib1
+    label: 'Num Recent Support Page Views'
     type: string
     sql: ${TABLE}.attrib1
 
   - dimension: attrib2
+    label: 'Num Recent Appliance Errors'
     type: string
     sql: ${TABLE}.attrib2
 
