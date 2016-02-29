@@ -106,8 +106,7 @@
   - measure: total_order_item_qty
     type: sum
     sql: ${TABLE}.ORDER_ITEM_QTY
-    value_format: '$#,##0.00'
-    
+
   - measure: total_order_discount_amt
     type: sum
     sql: ${TABLE}.ORDER_DISCOUNT_AMT
