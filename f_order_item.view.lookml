@@ -120,7 +120,6 @@
   - measure: total_item_qty
     type: sum
     sql: ${TABLE}.ITEM_QTY
-    value_format: '$#,##0.00'
 
   - measure: total_item_return_amt
     type: sum
