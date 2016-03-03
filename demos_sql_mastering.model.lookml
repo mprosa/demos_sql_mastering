@@ -38,14 +38,14 @@
 # - explore: d_individual
 # 
 - explore: d_individual_profile
-  label: 'People Profiles'
-  view_label: 'People Profiles'
+  label: 'Individual Profiles - PII'
+  view_label: 'Individual Profiles - PII'
   joins:
     - join: d_postal_code
       type: left_outer
       relationship: many_to_one
       sql_on: ${d_individual_profile.postal_cd}=${d_postal_code.postal_cd}
-      view_label: 'People Profiles'
+      view_label: 'Individual Profiles - PII'
 
 - explore: f_order_item
   label: 'Orders'
