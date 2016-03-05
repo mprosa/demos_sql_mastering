@@ -3,40 +3,7 @@
 - include: "*.view.lookml"       # include all the views
 - include: "*.dashboard.lookml"  # include all the dashboards
 
-# - explore: d_address
-# 
-# - explore: d_address_type
-# 
-# - explore: d_campaign
-# 
-# - explore: d_campaign_cell
-# 
-# - explore: d_campaign_cell_sync_i
-# 
-# - explore: d_campaign_sync_i
-# 
-# - explore: d_channel
-# 
-# - explore: d_channel_sync_i
-# 
-# - explore: d_date
-# 
-# - explore: d_dq_candidate_type
-# 
-# - explore: d_email
-# 
-# - explore: d_email_status
-# 
-# - explore: d_email_type
-# 
-# - explore: d_entity
-# 
-# - explore: d_entity_type
-# 
-# - explore: d_gender
-# 
-# - explore: d_individual
-# 
+
 - explore: d_individual_profile
   label: 'Individual Profiles - PII'
   view_label: 'Individual Profiles - PII'
@@ -46,6 +13,8 @@
       relationship: many_to_one
       sql_on: ${d_individual_profile.postal_cd}=${d_postal_code.postal_cd}
       view_label: 'Individual Profiles - PII'
+
+
 
 - explore: f_order_item
   label: 'Orders'
@@ -62,8 +31,13 @@
       relationship: many_to_one
       sql_on: ${f_order_item.product_id}=${d_product.product_id}
       view_label: 'Products'
+      
+      
+      
 - explore: d_membership
   label: 'Memberships'
+  
+  
   
 - explore: f_subscription
   label: 'Subscriptions'

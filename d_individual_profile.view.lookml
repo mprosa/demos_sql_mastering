@@ -10,6 +10,11 @@
     type: number
     sql: ${TABLE}.MASTER_INDIVIDUAL_ID    
     
+  - dimension: current_master_address_id
+    label: "Current Address / Household ID"
+    type: number
+    sql: ${TABLE}.CURRENT_MASTER_ADDRESS_ID       
+    
   - dimension: addr_line_full
     type: string
     sql: ${TABLE}.ADDR_LINE_FULL
@@ -34,8 +39,6 @@
     type: string
     sql: ${TABLE}.COUNTRY_NM
 
- 
-
   - dimension: days_since_first_order
     type: number
     sql: ${TABLE}.DAYS_SINCE_FIRST_ORDER
@@ -45,8 +48,8 @@
     sql: ${TABLE}.DAYS_SINCE_LAST_ORDER
 
   - dimension: deceased_flg
-    type: string
-    sql: ${TABLE}.DECEASED_FLG
+    type: yesno
+    sql: ${TABLE}.DECEASED_FLG='Y'
 
   - dimension: dob
     type: string
@@ -89,8 +92,8 @@
     sql: ${TABLE}.EMAILS_SENT_LTD
 
   - dimension: employee_flg
-    type: string
-    sql: ${TABLE}.EMPLOYEE_FLG
+    type: yesno
+    sql: ${TABLE}.EMPLOYEE_FLG='Y'
 
   - dimension: ethnicity
     type: string
@@ -114,8 +117,8 @@
     sql: ${TABLE}.GENDER
 
   - dimension: home_office_flg
-    type: string
-    sql: ${TABLE}.HOME_OFFICE_FLG
+    type: yesno
+    sql: ${TABLE}.HOME_OFFICE_FLG='Y'
 
   - dimension: individual_edu
     type: string
@@ -150,8 +153,6 @@
   - dimension: marital_status
     type: string
     sql: ${TABLE}.MARITAL_STATUS
-
-
 
   - dimension: middle_name
     type: string
@@ -268,6 +269,19 @@
   - dimension: attrib10
     type: string
     sql: ${TABLE}.attrib10
+    
+  - dimension: social_providers
+    label: Social Login Providers
+    type: string
+    sql: ${TABLE}.social_providers
+
+  - dimension: new_mover_flg
+    type: yesno
+    sql: ${TABLE}.NEW_MOVER_FLG='Y'
+    
+  - dimension: household_income
+    type: number
+    sql: ${TABLE}.HOUSEHOLD_INCOME
 
   - measure: count
     type: count

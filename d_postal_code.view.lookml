@@ -15,7 +15,8 @@
 #     sql: ${TABLE}.ASIAN_POPULATION
 # 
   - dimension: average_house_value
-    type: string
+    label: "Area Average House Value"
+    type: number
     sql: ${TABLE}.AVERAGE_HOUSE_VALUE
 
 #   - dimension: black_percent
@@ -107,7 +108,8 @@
 #     sql: ${TABLE}.HOUSEHOLDS_PER_POSTAL_CD
 # 
   - dimension: income_per_household
-    type: string
+    label: "Area Average Income Per Household"  
+    type: number
     sql: ${TABLE}.INCOME_PER_HOUSEHOLD
 # 
 #   - dimension: indian_percent
@@ -183,7 +185,8 @@
 #     sql: ${TABLE}.OTHER_POPULATION
 # 
   - dimension: persons_per_household
-    type: string
+    label: "Area Average Persons Per Household"
+    type: number
     sql: ${TABLE}.PERSONS_PER_HOUSEHOLD
 # 
 #   - dimension: pmsa
@@ -199,7 +202,8 @@
 #     sql: ${TABLE}.POPULATION
 # 
   - dimension: postal_cd
-    type: number
+    hidden: true
+    type: string
     sql: ${TABLE}.POSTAL_CD
 # 
 #   - dimension: preferred_lastline_key
@@ -238,7 +242,7 @@
 #     type: string
 #     sql: ${TABLE}.WHITE_POPULATION
 # 
-  - measure: count
-    type: count
-    drill_fields: []
+#  - measure: count
+#    type: count
+#    drill_fields: []
 # 
