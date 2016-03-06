@@ -283,9 +283,9 @@
     type: number
     sql: ${TABLE}.HOUSEHOLD_INCOME
 
-  - measure: count
-    type: count
-    drill_fields: [first_name, middle_name, last_name, full_name]
-
+  - measure: individual_count
+    type: count_distinct
+    sql: ${TABLE}.master_individual_id
+    drill_fields: []
 
 

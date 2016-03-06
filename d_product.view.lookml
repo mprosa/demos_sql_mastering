@@ -19,6 +19,7 @@
     sql: ${TABLE}.PRODUCT_DESC
 
   - dimension: product_id
+    hidden: true
     type: number
     sql: ${TABLE}.PRODUCT_ID
 
@@ -35,10 +36,9 @@
     sql: ${TABLE}.PRODUCT_TYPE
 
   - dimension: source_id
+    hidden: true
     type: number
     sql: ${TABLE}.SOURCE_ID
 
-  - measure: count
-    type: count
-    drill_fields: []
+
 
