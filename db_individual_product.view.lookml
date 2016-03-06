@@ -10,7 +10,7 @@
   - dimension: product_id
     hidden: true
     type: string
-    sql: ${TABLE}.HASH_KEY
+    sql: ${TABLE}.product_id
 
   - dimension: master_individual_id
     hidden: true
