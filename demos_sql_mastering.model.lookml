@@ -18,7 +18,7 @@
 ######################################################################
 
 - explore: f_order_item
-  label: 'Orders'
+  label: 'Customer - Orders'
   view_label: 'Order Items'
   joins:
     - join: f_order
@@ -35,12 +35,29 @@
 ######################################################################      
       
 - explore: d_membership
-  label: 'Memberships'
-  
+  label: 'Customer - Memberships'
+
 ######################################################################  
   
 - explore: f_subscription
-  label: 'Subscriptions'
+  label: 'Customer - Subscriptions'
+  view_label: 'Subscriptions'  
+  joins:
+    - join: f_order_item
+      type: inner
+      relationship: many_to_one
+      sql_on: ${f_subscription.order_item_id}=${f_order_item.order_item_id}
+      view_label: 'Order Items'
+    - join: f_order
+      type: inner
+      relationship: many_to_one
+      sql_on: ${f_subscription.order_id}=${f_order.order_id}
+      view_label: 'Orders'
+    - join: d_product
+      type: inner
+      relationship: many_to_one
+      sql_on: ${f_subscription.product_id}=${d_product.product_id}
+      view_label: 'Products'
 
 ######################################################################      
       

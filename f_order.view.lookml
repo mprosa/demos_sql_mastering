@@ -7,18 +7,22 @@
     sql: ${TABLE}.BILL_TO_ACCOUNT_NUMBER
 
   - dimension: bill_to_address_id
+    hidden: true  
     type: number
     sql: ${TABLE}.BILL_TO_ADDRESS_ID
 
   - dimension: bill_to_email_id
+    hidden: true  
     type: number
     sql: ${TABLE}.BILL_TO_EMAIL_ID
 
   - dimension: bill_to_individual_id
+    hidden: true  
     type: number
     sql: ${TABLE}.BILL_TO_INDIVIDUAL_ID
 
   - dimension: bill_to_phone_id
+    hidden: true  
     type: number
     sql: ${TABLE}.BILL_TO_PHONE_ID
 
@@ -49,6 +53,7 @@
 #     sql: ${TABLE}.ORDER_GROSS_AMT
 
   - dimension: order_id
+    hidden: true
     type: number
     sql: ${TABLE}.ORDER_ID
 
@@ -90,6 +95,7 @@
     sql: ${TABLE}.PAYMENT_METHOD
 
   - dimension: source_id
+    hidden: true  
     type: number
     sql: ${TABLE}.SOURCE_ID
 

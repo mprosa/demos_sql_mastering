@@ -63,14 +63,17 @@
 #     sql: ${TABLE}.ITEM_TAX_AMT
 
   - dimension: membership_id
+    hidden: true  
     type: number
     sql: ${TABLE}.MEMBERSHIP_ID
 
   - dimension: order_id
+    hidden: true  
     type: number
     sql: ${TABLE}.ORDER_ID
 
   - dimension: order_item_id
+    hidden: true  
     type: number
     sql: ${TABLE}.ORDER_ITEM_ID
 
@@ -79,22 +82,27 @@
     sql: ${TABLE}.ORDER_NUMBER
 
   - dimension: product_id
+    hidden: true  
     type: number
     sql: ${TABLE}.PRODUCT_ID
 
   - dimension: ship_to_address_id
+    hidden: true  
     type: number
     sql: ${TABLE}.SHIP_TO_ADDRESS_ID
 
   - dimension: ship_to_email_id
+    hidden: true  
     type: number
     sql: ${TABLE}.SHIP_TO_EMAIL_ID
 
   - dimension: ship_to_individual_id
+    hidden: true  
     type: number
     sql: ${TABLE}.SHIP_TO_INDIVIDUAL_ID
 
   - dimension: shp_to_phone_id
+    hidden: true  
     type: number
     sql: ${TABLE}.SHP_TO_PHONE_ID
 
