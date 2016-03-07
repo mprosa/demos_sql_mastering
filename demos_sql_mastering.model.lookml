@@ -62,7 +62,7 @@
 ######################################################################      
       
 - explore: db_individual_product
-  label: 'Product Ownership'
+  label: 'Customer - Product Ownership'
   view_label: 'Product Ownership'  
   joins:  
     - join: d_product
