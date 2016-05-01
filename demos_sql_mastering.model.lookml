@@ -14,6 +14,16 @@
       relationship: many_to_one
       sql_on: ${d_individual_profile.postal_cd}=${d_postal_code.postal_cd}
       view_label: 'Area Demographics'
+    - join: db_list_individual_master
+      type: left_outer
+      relationship: one_to_many
+      sql_on: ${d_individual_profile.master_individual_id}=${db_list_individual_master.master_individual_id}
+      view_label: 'Area Demographics'      
+    - join: d_list
+      type: left_outer
+      relationship: many_to_one
+      sql_on: ${db_list_individual_master.list_id}=${d_list.list_id}
+      view_label: 'Area Demographics'      
 
 ######################################################################
 
