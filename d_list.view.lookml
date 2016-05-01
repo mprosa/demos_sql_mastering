@@ -3,6 +3,7 @@
   fields:
 
   - dimension: list_id
+    hidden: true  
     type: number
     sql: ${TABLE}.LIST_ID
     

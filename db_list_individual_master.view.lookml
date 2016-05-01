@@ -3,9 +3,11 @@
   fields:
 
   - dimension: list_id
+    hidden: true
     type: number
     sql: ${TABLE}.LIST_ID
     
   - dimension: master_individual_id
+    hidden: true
     type: number
     sql: ${TABLE}.MASTER_INDIVIDUAL_ID  
