@@ -286,6 +286,6 @@
   - measure: individual_count
     type: count_distinct
     sql: ${TABLE}.master_individual_id
-    drill_fields: []
+    drill_fields: [master_individual_id]
 
 

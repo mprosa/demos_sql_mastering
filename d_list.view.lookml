@@ -14,3 +14,8 @@
   - dimension: list_desc
     type: string
     sql: ${TABLE}.LIST_DESC
+    
+  - measure: list_count
+    type: count_distinct
+    sql: ${TABLE}.list_id
+    drill_fields: [list_name, list_desc]    
