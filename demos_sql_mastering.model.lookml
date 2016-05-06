@@ -7,7 +7,7 @@
 
 - explore: d_individual_profile
   label: 'Individual Profiles - PII'
-  view_label: 'Individual Profiles'
+  view_label: 'Individual'
   joins:
     - join: d_postal_code
       type: left_outer
@@ -24,6 +24,14 @@
       relationship: many_to_one
       sql_on: ${db_list_individual_master.list_id}=${d_list.list_id}
       view_label: 'Lists'      
+
+######################################################################
+
+- explore: d_individual_profile_snapshot
+  label: 'Individual Profiles - Snapshots'
+  view_label: 'Individual'
+
+
 
 ######################################################################
 
