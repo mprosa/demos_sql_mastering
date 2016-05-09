@@ -285,6 +285,47 @@
     type: string
     sql: ${TABLE}.attrib10
     
+  - dimension: attrib11
+    type: string
+    sql: ${TABLE}.attrib11
+    
+  - dimension: attrib12
+    type: string
+    sql: ${TABLE}.attrib12
+
+  - dimension: attrib13
+    type: string
+    sql: ${TABLE}.attrib13
+    
+  - dimension: attrib14
+    type: string
+    sql: ${TABLE}.attrib14    
+    
+  - dimension: attrib15
+    type: string
+    sql: ${TABLE}.attrib15    
+
+  - dimension: attrib16
+    type: string
+    sql: ${TABLE}.attrib16
+    
+  - dimension: attrib17
+    type: string
+    sql: ${TABLE}.attrib17    
+
+  - dimension: attrib18
+    type: string
+    sql: ${TABLE}.attrib18  
+
+  - dimension: attrib19
+    type: string
+    sql: ${TABLE}.attrib19    
+
+  - dimension: attrib20
+    type: string
+    sql: ${TABLE}.attrib20    
+    
+
   - dimension: social_providers
     label: Social Login Providers
     type: string
